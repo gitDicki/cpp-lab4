@@ -51,7 +51,7 @@ Time::operator short int() const {
 }
 
 Time::operator bool() const {
-    return (hours != 0 || minutes != 0);
+    return (hours != 0 && minutes != 0);
 }
 
 Time Time::operator+(unsigned int mins) const {

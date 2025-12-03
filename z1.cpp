@@ -31,6 +31,14 @@ int main() {
     std::cout << "Текущее время: "<< t << std::endl;
     
     minutes = correct_input("Введите количество минут: ");
-    t.add_minutes(minutes);
+    t = t.add_minutes(minutes);
     std::cout << "Время после добвления " << minutes << " минут: "<< t << std::endl;
+
+    hours = correct_input("Введите количество часов: ");
+    Time t2(hours);
+    std::cout << "Текущее время (второй конструктор): "<< t2 << std::endl;
+
+    Time t3;
+    std::cout << "Текущее время (третий конструктор): "<< t3 << std::endl;
+    
 }

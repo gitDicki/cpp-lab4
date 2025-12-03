@@ -9,7 +9,7 @@ int correct_input(const std::string& prompt) {
         std::cout << prompt;
         std::cin >> value;
 
-        if (std::cin.fail()) {
+        if (std::cin.fail() or value < 0) {
             std::cout << "Ошибка ввода. Ожидалось целое число." << std::endl;
             std::cin.clear();
             
